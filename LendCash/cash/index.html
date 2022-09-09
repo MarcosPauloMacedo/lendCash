@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/ethereum.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS">
+    <script src="../LendCash/biblioteca/web3/node_modules/web3/dist/web3.min.js"></script>
+    <script src="../LendCash/biblioteca/funcoes/listafuncao.js"></script>
+    <script src="../LendCash/biblioteca/funcoes/converter.js"></script>
+    <title>Lend Cash - Cash</title>
+</head>
+<body>
+    <header id="menu">
+        <div class="caixa-menu">
+            <img class="imagem-menu" src="imagens/ethereum.png" alt="">
+        </div>
+        <h1 class="titulo">Lend Cash</h1>
+    </header>
+
+    <main id="conteudo">
+        <div class="container-conteudo">
+            <div class="carteira">
+                <h2 class="subtitulo">Sua carteira</h2>
+                <button class=" botao conectarCarteira"> <p>Conectar carteira</p></button>
+                <p class=" dadosDescricao descricao atencao">Mude para a rede ropsten</p>
+                <label class="dadosDescricao informacao" for="">Conta</label>
+                <p class="dadosDescricao descricao numeroContas">Conecte sua carteira e veja o resultado</p>
+                <label class="dadosDescricao informacao" for="">Saldo em Ether</label>
+                <p class="dadosDescricao descricao ether"> Conecte sua carteira e veja o resultado</p>
+                <label class="dadosDescricao informacao " for="">Meus empréstimos</label>
+                <p class="dadosDescricao descricao meuEmprestimo"> 0,00 R$</p>
+                <label class="dadosDescricao informacao" for="">Ether em garantia</label>
+                <p class="dadosDescricao descricao etherEmprestado"> 0,00 ETH</p>
+
+            <!--
+                <div class="moedas">
+                    <img class="imagensMoedas" src="/site/cash/imagens/dai.png" alt="">
+                    <input class="saldoDisponivel" type="text">
+                    <img class="imagensMoedas" src="/site/cash/imagens/ethereum.png" alt="">
+                    <input class="saldoDisponivel ether" type="text">
+                    <img class="imagensMoedas" src="/site/cash/imagens/polygon.png" alt="">
+                    <input class="saldoDisponivel" type="text">
+                </div>
+            -->    
+            </div>
+            
+            <div class="emprestimo">
+                <h2 class="subtitulo">Margem de empréstimo</h2>
+                <label class="dadosDescricao informacao" for="">Valor do ether</label>
+                <p class="dadosDescricao descricao etherAtualizado"></p>
+                <label class="dadosDescricao informacao" for="">Crédito pré aprovado</label>
+                <p class="dadosDescricao descricao creditoAprovado">Conecte sua carteira e veja o resultado</p>
+                <label class="dadosDescricao informacao" for="">Garantia em ether</label>
+                <p class="dadosDescricao descricao valorGarantia"> Conecte sua carteira e veja o resultado</p>
+            </div>
+
+            <div class="fazerEmprestimo">
+               <h2 class="subtitulo">Pegar Emprestado</h2>
+                <label class="dadosDescricao informacao" for="">Digite o valor em R$</label>
+                <input class="emprestimoDescricao descricao creditoAprovado pegarReal" type="text" placeholder="Não pode ser maior que o crédito pré aprovado">
+                <button class=" botao gerarGarantia" id="gerarGarantiaEther">Gerar garantia</button>
+                <label class="dadosDescricao informacao" for="">Valor em Eth que ficará de garantia</label>
+                <p class="dadosDescricao descricao creditoAprovado etherGarantia">Valor em Ether</p>
+                <label class="dadosDescricao informacao " for="">valor em R$ a transferir</label>
+                <p class="dadosDescricao descricao valorTransferir">valor em R$</p>
+                <label class="dadosDescricao informacao" for="">Sua chave pix</label>
+                <input class="emprestimoDescricao descricao " type="text" placeholder="chave pix para receber o depósito">
+            
+        <!--    <label class="dadosDescricao informacao" for="">Seu pix</label> -->
+        <!--    <input class="emprestimoDescricao informacao" type="text"> -->   
+
+                <button class=" botao transferir">Transferir</button>
+                
+            </div>
+        </div>
+    </main>
+    <script src="js/minhaCarteira.js"></script>
+    <script src="js/emprestimo.js"></script> 
+    <script src="js/emprestar.js"></script>
+    <script src="../LendCash/interacaoContrato/interagirContrato.js"></script>
+    <script src="js/meu-emprestimo.js"></script>
+</body>
+</html>

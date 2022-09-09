@@ -1,0 +1,181 @@
+/* cabeçalho */
+body{
+    background: #F2F4F6;
+}
+
+#menu, .caixa-menu{
+    display: flex;
+}
+
+#menu{
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.caixa-menu{
+    width: 5%;
+}
+
+.imagem-menu{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* conteúdo */
+
+#conteudo, .carteira {
+    display: flex;
+}
+
+#conteudo{
+    justify-content: center;
+}
+
+.container-conteudo{
+    width: 50%;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.carteira{
+    flex-direction: column;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid;
+}
+
+.subtitulo{
+    padding: 30px 0 10px;
+    font-size: 15px;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.botao{
+    width: 20%;
+    padding: 7px;
+    align-self: center;
+    /*margin: 20px 0 20px 200px;*/
+    background: #ffffff;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 0 0 15px 0;
+}
+
+.dadosDescricao{
+    width: 53%;
+    align-self:center;
+}
+
+.descricao{
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #4e4f4f;
+    opacity: 80%;
+    margin: 3px 0 20px;
+    border: 0px;
+}
+
+.atencao{
+    font-size: 0px;
+    color:#ef3535
+    
+}
+
+.informacao{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.botao:hover{
+    cursor: pointer;
+    color: #464545;
+}
+
+/*.saldo{
+    align-self: center;
+    padding: 2px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+*/
+
+/*
+.moedas{
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+}
+
+.imagensMoedas{
+    width: 7%;
+}
+
+.saldoDisponivel{
+    width: 15%;
+    height: 20px;
+}
+
+*/
+
+.emprestimo{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid;
+   /* height: 200px; */
+
+}
+
+.creditoAprovado, .valorGarantia{
+    margin: 2px 0 20px;
+    border: 0px;
+}
+
+.fazerEmprestimo{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid;
+}
+
+.emprestimoDescricao{
+    width: 52%;
+    margin-top: 5px;
+    align-self:center;
+    border: 1px solid;
+}
+
+@media screen and (max-width:1200px) {
+
+.container-conteudo{
+    width: 600px;
+}
+}
+
+@media screen and (max-width:600px) {
+
+.subtitulo{
+    font-size: 17px;
+}
+
+.botao{
+    width: 40%;
+}
+
+.dadosDescricao, .emprestimoDescricao{
+    width: 63%;
+}
+
+.informacao{
+    font-size: 15px;
+}
+}
+/* rodapé */

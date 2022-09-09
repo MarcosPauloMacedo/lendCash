@@ -1,0 +1,173 @@
+#menu, .caixa-menu{
+    display: flex;
+}
+
+#menu{
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 40px;
+
+}
+
+.caixa-menu{
+    width: 5%;
+}
+
+.imagem-menu{
+    width: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* corpo */
+
+.corpo{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #F2F4F6;
+    height: 500px;
+    width: 50%;
+    border: 0px;
+    border-radius: 10px;
+    padding: 25px 20px 0px;
+}
+
+.subtitulo{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 1px;
+    font-size: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.tipoDado{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tipoInformacao{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.dados{
+    margin: 5px 0 15px;
+    border: 0px;
+    border-radius: 5px;
+    width: 40%;
+    padding: 5px;
+
+}
+
+#area{
+    margin-top: 10px;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.botao{
+    width: 20%;
+    padding: 10px;
+    align-self: center;
+    margin:20px;
+    background:rgb(55, 55, 55);
+    border: 0px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.botao :hover{
+    cursor: pointer;
+}
+
+.resultado{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #545454
+}
+
+
+@media screen and (max-width:1100px) {
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caixa-menu{
+    width: 8%;
+}
+
+.titulo{
+    font-size: 30px;
+}
+
+#menu{
+    margin-bottom: 100px;
+}
+
+.formulario{
+    width: 80%;
+    height: 800px;
+}
+
+.dados{
+    width: 100%;
+    padding: 5px 0px;
+}
+}
+
+
+@media screen and (max-width:600px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .caixa-menu{
+        width: 15%;
+    }
+
+    .titulo{
+        font-size: 15px;
+    }
+
+    .formulario{
+        width: 100%;
+       height: 600px;
+    }
+
+    .dados{
+        width: 100%;
+        padding: 5px 0px;
+    }
+
+    .botao{
+        width: 40%;
+    }
+}

@@ -1,0 +1,99 @@
+/* cabeçalho */
+
+body{
+    background: #F2F4F6;
+}
+#menu, .caixa-menu{
+    display: flex;
+}
+
+#menu{
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.caixa-menu{
+    width: 5%;
+}
+
+.imagem-menu{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Conteudo */
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+}
+.caixa-conteudo{
+    width: 45%;
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitulo{
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.paragrafo{
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 5px 0 40px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.botao{
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
+    padding: 10px;
+}
+
+.botao :hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px) {
+
+    .caixa-conteudo{
+        width: 450px;
+    }
+
+    .caixa-menu{
+        width: 10%;
+    }
+    }
+    
+ /*   @media screen and (max-width:600px) {
+    
+    .subtitulo{
+        font-size: 17px;
+    }
+    
+    .botao{
+        width: 40%;
+    }
+    
+    .dadosDescricao, .emprestimoDescricao{
+        width: 63%;
+    }
+    
+    .informacao{
+        font-size: 15px;
+    }
+    }
+    /* rodapé */

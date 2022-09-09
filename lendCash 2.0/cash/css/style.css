@@ -1,0 +1,192 @@
+/* cabeçalho */
+body{
+    background: #F2F4F6;
+}
+
+#cabecalho, .menu{
+    display: flex;
+}
+
+#cabecalho{
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.menu{
+    width: 5%;
+}
+
+.imagem-menu{
+    width: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* conteúdo */
+
+    /*carteira*/
+
+#conteudo, #carteira {
+    display: flex;
+}
+
+#conteudo{
+    justify-content: center;
+}
+
+#container-conteudo{
+    width: 50%;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+#carteira{
+    flex-direction: column;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid;
+}
+
+.subtitulo{
+    padding: 30px 0 10px;
+    font-size: 15px;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.botaoConectar{
+    width: 20%;
+    padding: 7px;
+    align-self: center;
+    background: linear-gradient(45deg,#7c7c8a,black);
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 0 0 15px 0;
+    color: #ffffff;
+}
+
+.dadosDescricao{
+    width: 53%;
+    align-self:center;
+}
+
+.descricao{
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #4e4f4f;
+    opacity: 80%;
+    margin: 3px 0 20px;
+    border: 0px;
+}
+
+#atencao{
+    font-size: 0px;
+    color:#ef3535  
+}
+
+.informacao{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.botao:hover,.botaoConectar:hover{
+    cursor: pointer;
+    background: linear-gradient(45deg,black,#7c7c8a);
+}
+
+    /*emprestimo*/ /*fazer emprestimo*/
+
+#emprestimo, #fazerEmprestimo{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid;
+}
+
+#formulario-garantia{
+    display: flex;
+    flex-direction: column;
+}
+
+#creditoAprovado, #valorGarantia,#etherGarantia{
+    margin: 2px 0 20px;
+    border: 0px;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.emprestimoDescricao{
+    width: 52%;
+    margin-top: 5px;
+    align-self:center;
+    border-bottom: 1.5px solid;
+    padding-top: 5px;
+}
+
+.botao{
+    width: 20%;
+    padding: 7px;
+    align-self: center;
+    background: #464545;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 0 0 15px 0;
+    color: #f9f9f9;
+}
+
+#ajuda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+#caixa-interrogacao{
+    width:20px;
+}
+
+.imagem-interrogacao{
+    width: 100%;
+    padding: 20px 0 0 10px;
+}
+
+#caixa-interrogacao :hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+
+#container-conteudo{
+    width: 600px;
+}
+}
+
+@media screen and (max-width:600px) {
+
+.subtitulo{
+    font-size: 17px;
+}
+
+.botao,.botaoConectar{
+    width: 40%;
+}
+
+.dadosDescricao, .emprestimoDescricao{
+    width: 63%;
+}
+
+.informacao{
+    font-size: 15px;
+}
+}
+/* rodapé */

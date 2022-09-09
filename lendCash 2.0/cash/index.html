@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/ethereum.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS">
+    <script src="../ferramentas/biblioteca/web3/node_modules/web3/dist/web3.min.js"></script>
+    <script src="../ferramentas/contrato/contrato.js"></script>
+    <script src="./js/Carteira.js"></script>
+    <script src="./js/Emprestimo.js"></script>
+    <script src="./js/Transferencia.js"></script>
+    <title>Lend Cash - Cash</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="menu">
+            <img class="imagem-menu" src="imagens/ethereum.png" alt="">
+        </div>
+        <h1 class="titulo">Lend Cash</h1>
+    </header>
+    <main id="conteudo">
+        <div id="container-conteudo">
+            <div id="carteira">
+                <h2 class="subtitulo">Sua carteira</h2>
+                <button class=" botaoConectar" id="conectarCarteira"> <p>Conectar carteira</p></button>
+                <p class=" dadosDescricao descricao" id="atencao">Mude para a rede ropsten</p>
+                <label class="dadosDescricao informacao" for="">Conta</label>
+                <p class="dadosDescricao descricao" id="numeroConta">Conecte sua carteira e veja o resultado</p>
+                <label class="dadosDescricao informacao" for="">Saldo em Ether</label>
+                <p class="dadosDescricao descricao" id="saldoEther"> Conecte sua carteira e veja o resultado</p>
+                <label class="dadosDescricao informacao " for="">Meus empréstimos</label>
+                <p class="dadosDescricao descricao" id="meuEmprestimo"> 0,00 R$</p>
+                <label class="dadosDescricao informacao" for="">Ether em garantia</label>
+                <p class="dadosDescricao descricao" id="etherEmprestado"> 0,00 ETH</p>
+            </div>
+            
+            <div id="emprestimo">
+                <h2 class="subtitulo">Margem de empréstimo</h2>
+                <label class="dadosDescricao informacao" for="">Valor do ether</label>
+                <p class="dadosDescricao descricao" id="precoEther"></p>
+                <label class="dadosDescricao informacao" for="">Crédito pré aprovado</label>
+                <p class="dadosDescricao descricao" id="creditoAprovado">Conecte sua carteira e veja o resultado</p>
+                <label class="dadosDescricao informacao" for="">Garantia em ether</label>
+                <p class="dadosDescricao descricao" id="valorGarantia"> Conecte sua carteira e veja o resultado</p>
+            </div>
+
+            <div id="fazerEmprestimo">
+                <h2 class="subtitulo">Pegar Emprestado</h2>
+
+                <form action="" id="formulario-garantia">
+                    <label class="dadosDescricao informacao" for="">Digite o valor em R$</label>
+                    <input class="emprestimoDescricao descricao" id="pegarReal" type="number" required placeholder="menor ou igual crédito pré aprovado">
+                    <button class=" botao gerarGarantia" id="gerarGarantiaEther">Gerar garantia</button>
+                </form>
+
+                <label class="dadosDescricao informacao" for="">Valor em Eth que ficará de garantia</label>
+                <p class="dadosDescricao descricao" id="etherGarantia">Valor em Ether</p>
+                <label class="dadosDescricao informacao " for="">valor em R$ a transferir</label>
+                <p class="dadosDescricao descricao" id="valorTransferir">valor em R$</p>
+                
+                <form id="formulario" action="">
+                    <label class="dadosDescricao informacao" for="">Sua chave pix</label>
+                    <input class="emprestimoDescricao descricao" type="text" required placeholder="chave pix para receber o depósito">
+                    <button class="botao" id="transferir">Transferir</button>                
+                </form>        
+            </div>
+
+            <div id="ajuda">
+                <h2 class="subtitulo">Precisa de ajuda?</h2>
+                <div id="caixa-interrogacao">
+                    <img class="imagem-interrogacao" src="imagens/interrogacao.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
