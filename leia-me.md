@@ -7,7 +7,7 @@ lendCash (emprestar dinheiro) é um projeto de aplicação web criado para inter
 
 Esse smart contract é responsável por facilitar a tomada de créditos por parte de um usuário que possui em sua carteira de criptomoeda metaMask, principal carteira de cripto da rede ethereum, ether como forma de garantia.
 
-Através deste contrato inteligente, a captação de recursos é realizada de forma rápida e com baixos custos operacionais, já que não existe envolvimento de intermediários no processo.
+Através deste contrato inteligente a captação de recursos é realizada de forma rápida e com baixos custos operacionais, já que não existe envolvimento de intermediários no processo.
 
 É feita uma transação simples onde o tomador de crédito coloca a mesma quantidade de ether que gostaria de captar em recursos como garantia e recebe em uma conta cadastrada, via pix, o valor registrado.
 
